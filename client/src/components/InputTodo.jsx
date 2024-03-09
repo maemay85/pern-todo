@@ -22,7 +22,7 @@ const InputTodo = () => {
 
   return (
     <>
-      <h1>Input Todo</h1>
+      <h2>Input Todo:</h2>
       <form onSubmit={onSubmitForm}>
         <input type="text"
         value={description}

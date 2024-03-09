@@ -1,14 +1,17 @@
 import { useState } from 'react'
 import InputTodo from './components/InputTodo'
 import './App.css'
+import ListTodos from './components/ListTodos'
+import ListHeader from './components/ListHeader'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className='app'>
+      <ListHeader listName={`Holiday tick list`} />
       <InputTodo />
-    </>
+      <ListTodos />
+    </div>
   )
 }
 
